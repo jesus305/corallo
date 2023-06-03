@@ -1,0 +1,1 @@
+<img src="{{ asset('logo/r6.png') }}" class="w-28">
