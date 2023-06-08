@@ -62,3 +62,36 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# LEVANTAR PROYECTO EN LARAVEL - WINDOWS
+
+Para levantar el proyecto en __laravel__ primero debemos asegurarnos de tener instalado __PHP__ asi:
+1. ejecutamos en *cmd*
+```
+php --version
+```
+Nos aseguramos que nos devuelva por por ejemplo: __PHP 8.2.4 (cli)__
+
+2. Nos aseguramos tambien de tener instalado [composer](https://getcomposer.org/) podemos comprobar ejecutando en *cmd* lo siguiente:
+```
+composer --version
+```
+Nos deberá devolver por cosola por ejemplo: __Composer version 2.5.7__.
+
+3. Descargamos el proyecto desde github en un **.zip** o clonamos directamente el repositorio con ```git clone https://github.com/jesus305/corallo.git```
+
+4. Una vez tenemos el proyecto en nuestra computadora navegamos al proyecto por consola así: ```cd corallo``` por ejemplo:
+
+5. Estando ubicados en el proyecto copiamos el archivo *.env-template* y lo renombramos como: *.env* y configuramos las variables de entorno que tenemos
+
+6. Una vez tenemos los pasos anteriores listo vamos a la terminal y ejecutamos ```composer install```
+7. Luego ejecutamos ```php artisan key:generate``` para generar una nueva clave de aplicación
+8. Corremos las migraciones de la BD con el siguiente comando: ```php artisan migrate```
+9. Como en esté proyecto usamos algunos modulos de node ejecutamos el siguiente comando ```npm install```
+10. Una vez tenemos todo instalado ya tenemos listo nuestro proyecto para correrlo, entonces ejecutamos el comando en la terminal ```php artisan serve``` Por defecto, el servidor se ejecutará en ```http://localhost:8000```
+11. En una nueva instancia de la terminal también corremos el siguiente comando para cargar el diseño que es: ```npm run dev```
+
+Y listo finalmente tenemos el proyecto listo para iniciar a desarrollar
+
+## Créditos: [ronaldo071515](https://github.com/ronaldo071515)
